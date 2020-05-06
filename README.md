@@ -2,7 +2,7 @@
 
 # zzz forum
 
-a anonymous forum for zzz, no user id, no central database(github private repo issue as database)
+a anonymous forum for zzz, no user id, no central database(this repo [issue](https://github.com/bluebird97/zzzfourm/issues) as database)
 
 # screenshot
 
