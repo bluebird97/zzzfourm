@@ -6,11 +6,11 @@ a anonymous forum for zzz, no user id, no central database(github private repo i
 
 # screenshot
 
-| 动态 | 侧滑页 | 个人主页 |
+| 入口 | 主列表 | 话题界面 |
 |:-:|:-:|:-:|
 |![img-1](./img/img-1.jpg)|![img2](./img/img2.jpg)|![img0](./img/img0.jpg)|
 
-| 动态 | 侧滑页 | 个人主页 |
+| 话题排序 | 话题评论 | 评论列表 |
 |:-:|:-:|:-:|
 |![img1](./img/img1.jpg)|![img3](./img/img3.jpg)|![img4](./img/img4.jpg)|
 
