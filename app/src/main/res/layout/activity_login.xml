@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_bg"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/activity_margin"
+    tools:context=".ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="38sp"
+            android:layout_weight="9"
+            android:text="欢迎回村"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="80"
+            android:text="来咱村，记录简单朴实的生活！"/>
+        <com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/login_bn"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            app:buttonColor="?colorAccent"
+            app:buttonText="进村"
+            app:buttonTextSize="18sp"/>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
