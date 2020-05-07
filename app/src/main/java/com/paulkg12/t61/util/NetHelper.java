@@ -23,7 +23,8 @@ public enum  NetHelper {
     }
 
     /**
-     * 检测当前网络状态
+     * 检测当前网络状态//tt 其实称为updateClsMbr()更好，clsMbr 指的是 mCurNetStatus
+     * 检查一下状态，而且一定会对 mCurNetStatus 赋值，更不更新，那就另说。
      */
     public void checkNet(){
         try {
