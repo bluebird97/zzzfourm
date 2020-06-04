@@ -18,6 +18,11 @@ a anonymous forum for zzz, no user id, no central database(this repo [issue](htt
 
 https://github.com/bluebird97/zzzfourm/blob/master/app/fullName/release/cuncun.apk
 
+### 国内用户更快的下载地址：
+
+https://lanzous.com/ic81sxc
+
+
 # current stage:
 
 next:  run on phone

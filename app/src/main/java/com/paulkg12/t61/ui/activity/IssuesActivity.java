@@ -45,24 +45,12 @@ public class IssuesActivity extends PagerActivity<IssuesActPresenter>
 
     public static void showForRepo(@NonNull Activity activity, @NonNull String userId,
                                    @NonNull String repoName) {
-        Intent intent = createIntentForRepo(activity, userId, repoName);
-        activity.startActivity(intent);
-    }
-
-    public static void showForUser(@NonNull Activity activity) {
-        Intent intent = new Intent(activity, IssuesActivity.class);
-        intent.putExtras(BundleHelper.builder()
-                .put("issuesType", IssuesFilter.Type.User).build());
-        activity.startActivity(intent);
-    }
-
-    public static Intent createIntentForRepo(@NonNull Activity activity, @NonNull String userId,
-                                             @NonNull String repoName) {
-        return new Intent(activity, IssuesActivity.class)
+        Intent intent = new Intent(activity, IssuesActivity.class)
                 .putExtras(BundleHelper.builder()
                         .put("issuesType", IssuesFilter.Type.Repo)
                         .put("userId", userId)
                         .put("repoName", repoName).build());
+        activity.startActivity(intent);
     }
 
     private final static int ADD_ISSUE_REQUEST_CODE = 100;
