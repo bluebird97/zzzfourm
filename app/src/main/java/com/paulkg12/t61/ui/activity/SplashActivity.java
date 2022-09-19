@@ -25,14 +25,15 @@ public class SplashActivity extends BaseActivity<SplashPresenter> implements ISp
         if (dataUri == null) {
             IssuesActivity.showForRepo(this, "bluebird97", "zzzfourm");
         } else {
-            //BrowserFilterActivity.handleBrowserUri(getActivity(), dataUri);
+            // BrowserFilterActivity.handleBrowserUri(getActivity(), dataUri);
         }
     }
 
     @Override
     public void showLoginPage() {
         delayFinish();
-        startActivity(new Intent(getActivity(), LoginActivity.class));
+        System.out.println("TTAG : splash to first page");
+        startActivity(new Intent(getActivity(), FirstPageActivity.class));
     }
 
     /**

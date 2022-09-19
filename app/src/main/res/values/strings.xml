@@ -477,6 +477,8 @@
     <string name="add_account">Add account</string>
     <string name="delete_label_warning">Confirm to delete this label?</string>
     <string name="issue_topic">Topic</string>
+    <string name="health">健康</string>
+    <string name="experience">经验</string>
 
 </resources>
 

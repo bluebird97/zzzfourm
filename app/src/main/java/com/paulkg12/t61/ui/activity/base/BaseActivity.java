@@ -35,6 +35,7 @@ import com.paulkg12.t61.R;
 import com.paulkg12.t61.dao.DaoSession;
 import com.paulkg12.t61.inject.component.AppComponent;
 import com.paulkg12.t61.mvp.contract.base.IBaseContract;
+import com.paulkg12.t61.ui.activity.FirstPageActivity;
 import com.paulkg12.t61.ui.activity.LoginActivity;
 import com.paulkg12.t61.ui.activity.SplashActivity;
 import com.paulkg12.t61.ui.widget.DoubleClickHandler;
@@ -70,7 +71,8 @@ public abstract class BaseActivity <P extends IBaseContract.Presenter>
     public void onCreate(@Nullable Bundle savedInstanceState) {
         if((AppData.INSTANCE.getAuthUser() == null || AppData.INSTANCE.getLoggedUser() == null)
                 && !this.getClass().equals(SplashActivity.class)
-                && !this.getClass().equals(LoginActivity.class)){
+                && !this.getClass().equals(LoginActivity.class)
+                && !this.getClass().equals(FirstPageActivity.class)){
             super.onCreate(savedInstanceState);
             finishAffinity();
             startActivity(new Intent(getActivity(), SplashActivity.class));

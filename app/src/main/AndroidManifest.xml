@@ -11,21 +11,21 @@
     <application
         android:name=".AppApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/logo"
-        android:label="村儿"
-        android:roundIcon="@mipmap/logo"
+        android:icon="@mipmap/free_panel_girl"
+        android:label="月月变美女"
+        android:roundIcon="@mipmap/free_panel_girl"
         android:theme="@style/SplashTheme">
         <receiver android:name=".service.NetBroadcastReceiver"/>
         <activity
             android:name=".ui.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
 
-                <action android:name="android.intent.action.VIEW"/>
-            </intent-filter>
+<!--                <action android:name="android.intent.action.VIEW"/>-->
+<!--            </intent-filter>-->
 
             <meta-data
                 android:name="android.app.shortcuts"
@@ -50,6 +50,15 @@
         <activity android:name=".ui.activity.MarkdownEditorActivity" android:windowSoftInputMode="stateVisible"/>
         <activity android:name=".ui.activity.EditIssueActivity" android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".ui.activity.ViewerActivity"/>
+        <activity android:name=".ui.activity.FirstPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>
